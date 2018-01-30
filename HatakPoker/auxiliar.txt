@@ -1,0 +1,336 @@
+while jogando:
+        #CHARMANDER
+        if chart == 1 and chart1 == 1: #GEODUDE
+            print("-------------------")
+            print("Charmander!,Eu escolho você")
+            #Erro nessa funcao!
+            #ja consertei as funcoes do player
+            #Falta consertar as funcoes do Inimigo
+            #Para colocar aq
+            
+            print("Digite (1)-para usar ember,(2)-para usar flametower,(3)-para usar fireblast")
+            res = int(input("(1),(2),(3): "))
+            if res == 1:
+                print("Charmander Use Ember!!")
+                vida_geodude -= atk_charmander_cd1
+                print("Vida do Geodude",vida_geodude)
+                if vida_geodude <= 0:
+                    print("Geodude,Morreu")
+                    try:
+                        print("Voce tem a chance de matar seu inimigo!!")
+                        print("Antes que ele coloque outro poke!")
+                        print()
+                        print("Charmander use Ember!!")
+                        player_inimigo -= atk_charmander_cd1
+                        print("Vida do Seu inimigo",player_inimigo)
+                        if player_inimigo <= 0:
+                            print("Voce o Derrotou")
+                            break
+                    except:
+                        print("Deseja matar outro inimigo?")
+                        res = input("Deseja jogar novamente [S/N]: ")
+
+ 
+                    
+                print()
+                print("Geodude,Contra-Ataca")
+                vida_charmander -= atk_geodude_cd2
+                print("Vida do seu charmander",vida_charmander)
+            elif res == 2:
+                print("Charmander use Flametower!!")
+                vida_geodude -= atk_charmander_cd2
+                print("Vida do Geodude",vida_geodude)
+                if vida_geodude <= 0:
+                    print("Geodude,Morreu")
+
+                print()
+                print("Geodude,Contra-Ataca")
+                vida_charmander -= atk_geodude_cd2
+                print("Vida do seu charmander",vida_charmander)
+                    
+            elif res == 3:
+                print("Charmander use FireBlast!!")
+                vida_geodude -= atk_charmander_cd3
+                print("Vida do Geodude",vida_geodude)
+                if vida_geodude <=0:
+                    print("Geodude,Morreu")
+
+                print()
+                print("Geodude,Contra-Ataca")
+                vida_charmander -= atk_geodude_cd2
+                print("Vida do seu charmander",vida_charmander)
+                
+                 
+       
+        elif chart == 1 and chart1 == 2: #SHINY HORSEA
+            print("-------------------")
+            print("Charmander!,Eu escolho você")
+            print("Digite (1)-para usar ember,(2)-para usar flametower,(3)-para usar fireblast")
+            res = int(input("(1),(2),(3): "))
+            if res == 1:
+                print("Charmander Use Ember!!")
+                vida_shiny_horsea -= atk_charmander_cd1
+                print("Vida do Shiny Horsea",vida_shiny_horsea)
+                if vida_shiny_horsea <= 0:
+                    print("Shiny Horsea,Morreu")
+
+                #
+                try:
+                    print("Você tem a chance de matar seu inimigo")
+                    print("Antes que ele coloque outro pokemon:")
+                    print()
+                    print("Charmander use Ember")
+                    player_inimigo -= atk_charmander_cd1
+                    if player_inimigo <= 0:
+                        print("Voce o Derrotou")
+                        break
+                except:
+                    print("Deseja matar outro inimigo:")
+                    res = input("Deseja jogar novamente [S/N]: ")
+               
+
+                
+                print()
+                print("Shiny Horsea,Contra-Ataca")
+                vida_charmander -= atk_horsea_cd2
+                print("Vida do seu charmander",vida_charmander)
+                
+            elif res == 2:
+                print("Charmander Use Flametower!!")
+                vida_shiny_horsea -= atk_horsea_cd2
+                print("Vida do Shiny Horsea",vida_shiny_horsea)
+                if vida_shiny_horsea <=0:
+                    print("Shiny Horsea,Morreu")
+
+                
+                print()
+                print("Shiny Horsea,Contra-Ataca")
+                vida_charmander -= atk_horsea_cd2
+                print("Vida do seu charmander",vida_charmander)
+                
+            elif res == 3:
+                print("Charmander use FireBlast!!")
+                vida_shiny_horsea -= atk_charmander_cd3
+                print("Vida do Geodude",vida_shiny_horsea)
+                if vida_shiny_horsea <= 0:
+                    print("Shiny Horsea,Morreu")
+
+                
+                print()
+                print("Shiny Horsea,Contra-Ataca")
+                vida_charmander -= atk_horsea_cd2
+                print("Vida do seu charmander",vida_charmander)
+                
+                
+        elif chart == 1 and chart1 == 3: #GOLDEN
+            print("-------------------")
+            print("Charmander!,Eu escolho você")
+            
+            print("Digite (1)-para usar ember,(2)-para usar flametower,(3)-para usar fireblast")
+            res = int(input("(1),(2),(3): "))
+            if res == 1:
+                print("Charmander Use Ember!!")
+                vida_golden -= atk_charmander_cd1
+                print("Vida do Golden",vida_golden)
+                if vida_golden <= 0:
+                    print("Golden,Morreu")
+                    try:
+                        print("Voce tem a chance de matar seu inimigo!!")
+                        print("Antes que ele coloque outro poke!")
+                        print()
+                        print("Charmander use Ember!!")
+                        player_inimigo -= atk_charmander_cd1
+                        print("Vida do Seu inimigo",player_inimigo)
+                        if player_inimigo <= 0:
+                            print("Voce o Derrotou")
+                            break
+                    except:
+                        print("Deseja matar outro inimigo?")
+                        res = input("Deseja jogar novamente [S/N]: ")
+
+                print()
+                print("Golden,Contra-Ataca")
+                vida_charmander -= atk_golden_cd2
+                print("Vida do seu charmander",vida_charmander)
+                
+            elif res == 2:
+                print("Charmander use Flametower!!")
+                vida_golden -= atk_charmander_cd2
+                print("Vida do Golden",vida_golden)
+                if vida_golden <= 0:
+                    print("Golden,Morreu")
+
+                print()
+                print("Golden,Contra-Ataca")
+                vida_charmander -= atk_golden_cd2
+                print("Vida do seu charmander",vida_golden)
+            elif res == 3:
+                print("Charmander use FireBlast!!")
+                vida_golden -= atk_charmander_cd3
+                print("Vida do Geodude",vida_golden)
+                if vida_golden <= 0:
+                    print("Golden,Morreu")
+
+                print()
+                print("Golden,Contra-Ataca")
+                vida_charmander -= atk_golden_cd2
+                print("Vida do seu charmander",vida_charmander)
+                
+                
+        elif chart == 1 and chart1 == 4: #VULPIX
+            print("-------------------")
+            print("Charmander!,Eu escolho você")
+            charmander()
+            print("Digite (1)-para usar ember,(2)-para usar flametower,(3)-para usar fireblast")
+            res = int(input("(1),(2),(3): "))
+            if res == 1:
+                print("Charmander Use Ember!!")
+                vida_vulpix -= atk_charmander_cd1
+                print("Vida do Vulpix",vida_vulpix)
+                if vida_vulpix <= 0:
+                    print("Vulpix ,Morreu")
+                    try:
+                        print("Voce tem a chance de matar seu inimigo!!")
+                        print("Antes que ele coloque outro poke!")
+                        print()
+                        print("Charmander use Ember!!")
+                        player_inimigo -= atk_charmander_cd1
+                        print("Vida do Seu inimigo",player_inimigo)
+                        if player_inimigo <= 0:
+                            print("Voce o Derrotou")
+                            break
+                    except:
+                        print("Deseja matar outro inimigo?")
+                        res = input("Deseja jogar novamente [S/N]: ")
+
+                print()
+                print("Vulpix,Contra-Ataca")
+                vida_charmander -= atk_vulpix_cd2
+                print("Vida do seu charmander",vida_charmander)
+                
+            elif res ==2:
+                print("Charmander Use Flametower!!")
+                vida_vulpix -= atk_charmander_cd2
+                print("Vida do Vulpix",vida_vulpix)
+                if vida_vulpix <= 0:
+                    print("Vulpix,Morreu")
+                print()
+                print("Vulpix,Contra-Ataca")
+                vida_charmander -= atk_vulpix_cd2
+                print("Vida do seu charmander",vida_charmander)
+                
+            elif res == 3:
+                print("Charmander use FireBlast!!")
+                vida_vulpix -= atk_charmander_cd3
+                print("Vida do Geodude",vida_vulpix)
+                if vida_vulpix <= 0:
+                    print("Vulpix,Morreu")
+
+                print()
+                print("Vulpix,Contra-Ataca")
+                vida_charmander -= atk_vulpix_cd2
+                print("Vida do seu charmander",vida_charmander)
+                
+                
+
+        elif chart == 1 and chart1 == 5: #ODDISH
+            print("-------------------")
+            print("Charmander!,Eu escolho você")
+            print("Digite (1)-para usar ember,(2)-para usar flametower,(3)-para usar fireblast")
+            res = int(input("(1),(2),(3): "))
+            if res == 1:
+                print("Charmander Use Ember!!")
+                vida_oddish -= atk_charmander_cd1
+                print("Vida do Oddish",vida_oddish)
+                if vida_oddish <= 0:
+                    print("Oddish,Morreu")
+                    try:
+                        print("Voce tem a chance de matar seu inimigo!!")
+                        print("Antes que ele coloque outro poke!")
+                        print()
+                        print("Charmander use Ember!!")
+                        player_inimigo -= atk_charmander_cd1
+                        print("Vida do Seu inimigo",player_inimigo)
+                        if player_inimigo <= 0:
+                            print("Voce o Derrotou")
+                            break
+                    except:
+                        print("Deseja matar outro inimigo?")
+                        res = input("Deseja jogar novamente [S/N]: ")
+
+                print()
+                print("Oddish,Contra-Ataca")
+                vida_charmander -= atk_oddish_cd2
+                print("Vida do charmander",vida_charmander)
+                
+            elif res == 2:
+                print("Charmander use Flametower!!")
+                vida_oddish -= atk_charmander_cd2
+                print("Vida do Oddish",vida_oddish)
+                if vida_oddish <= 0:
+                    print("Oddish,Morreu")
+
+                print()
+                print("Oddish,Contra-Ataca")
+                vida_charmander -= atk_oddish_cd2
+                print("Vida do charmander",vida_charmander)
+                
+            elif res == 3:
+                print("Charmander use FireBlast!!")
+                vida_oddish -= atk_charmander_cd3
+                print("Vida do Oddish",vida_oddish)
+                if vida_oddish <= 0:
+                    print("Oddish,Morreu")
+                
+                print()
+                print("Oddish,Contra-Ataca")
+                vida_charmander -= atk_oddish_cd2
+                print("Vida do charmander",vida_charmander)
+                
+        elif chart == 1 and chart1 == 6: #Shiny tentacool
+            print("-------------------")
+            print("Charmander!,Eu escolho você")
+            print("Digite (1)-para usar ember,(2)-para usar flametower,(3)-para usar fireblast")
+            res = int(input("(1),(2),(3): "))
+            if res == 1:
+                print("Charmander Use Ember!!")
+                vida_shiny_tentacool -= atk_charmander_cd1
+                print("Vida do Shiny Tentacool",vida_shiny_tentacool)
+                if vida_shiny_tentacool <=0:
+                    print("Shiny Tentacool,Morreu")
+
+                print()
+                print("Shiny Tentacool,Contra-Ataca")
+                vida_charmander -= atk_tentacool_cd2
+                print("vida do charmander",vida_charmander)
+            elif res == 2:
+                print("Charmander use Flametower!!")
+                vida_shiny_tentacool -= atk_charmander_cd2
+                print("Vida do Shiny tentacool",vida_shiny_tentacool)
+                if vida_shiny_tentacool <= 0:
+                    print("Shiny Tentacool,Morreu")
+
+                print()
+                print("Shiny Tentacool,Contra-Ataca")
+                vida_charmander -= atk_tentacool_cd2
+                print("vida do charmander",vida_charmander)
+                
+            elif res == 3:
+                print("Charmander use FireBlast!!")
+                vida_shiny_tentacool -= atk_charmander_cd3
+                print("Vida do Shiny Tentacool",vida_shiny_tentacool)
+                if vida_shiny_tentacool <=0:
+                    print("Shiny Tentacool,Morreu")
+
+                print()
+                print("Shiny Tentacool,Contra-Ataca")
+                vida_charmander -= atk_tentacool_cd2
+                print("vida do charmander",vida_charmander)
+
+
+
+
+
+
+    #SQUIRTLE
+        #começa aq
